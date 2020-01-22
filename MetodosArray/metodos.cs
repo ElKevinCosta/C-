@@ -116,6 +116,14 @@ class Metodos
         //Quando o metodo recebe o parametro por ref temos que o colocar
         multiplicar(ref valorMult);
         Console.WriteLine(valorMult);
+        //Declara o v2 para enviar para o out
+        int v2;
+        //Igual o return do metodo na variavel v1
+        int v1 = valores(out v2);
+        Console.WriteLine(v1);
+        Console.WriteLine(v2);
+
+
 
 
     }
@@ -138,8 +146,18 @@ class Metodos
     static void multiplicar(ref int valor){
 
             valor*=2;
-
     }
 
+    // OUT --> Serve para retorna um segundo valor do metodo metodo -->(Out in EX), int EX1 ;chamada --> valores(out EX1)
+    static int valores(out int v2){
+
+        Console.WriteLine("Introduza o primeiro valor : ");
+        int v1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Introduza o segundo valor : ");
+        v2 = Convert.ToInt32(Console.ReadLine());
+
+        return v1;
+
+    }
 
 }
