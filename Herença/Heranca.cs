@@ -5,6 +5,7 @@ public class Carro{ //Class Base
 
 //Private --> privado apenas é acessivel dentro da propria class
 // Protected--> É possivel aceder na propria class e nas class que a herdam
+//Sealed Class --> A class não pode ser herdada
 private bool estado;
 private int rodas;
 protected string cor;
