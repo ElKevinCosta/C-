@@ -1,0 +1,15 @@
+Build a .NET Core Web API
+
+Sem base de dados a web api vai expor alguns métodos:
+
+Install Postman to call/test your API 
+
+1. IP:PORT/API/User (GET) -> Retorna um exemplo de um utilizador estático {Name: "Kevin", Idade: "30", adiciona um campo de varios tipos e listas}
+
+2. IP:PORT/API/User (POST) -> Recebe um json com os dados para criar um novo utilizador e verificar se os dados são válidos e estão todos preenchidos retornado erros de validaçao em json caso nao esteja {Name: "Name is empty and is mandatory"}
+
+3. IP:PORT/API/User/USERID/Morada (POST) -> Recebe um json com uma morada que teoricamente depois vamos adicionar ao utilizador na BD {Morada : "Rua 1º de Maio"}
+
+3. IP:PORT/API/token (GET) - > Recebe uma palavra pass e user e verifica dummy Token autenticação
+
+---------------------------------------------------------------------------------------------------------------------
